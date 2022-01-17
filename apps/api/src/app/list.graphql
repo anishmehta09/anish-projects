@@ -1,0 +1,10 @@
+type Query {
+    allCurrencies: [Currency]
+}
+
+type Currency {
+    id: Int
+    name: String
+    symbol: String
+    rank: Int
+}
