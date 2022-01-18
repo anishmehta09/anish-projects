@@ -1,0 +1,21 @@
+type Query {
+    cryptoList: [CryptoAsset]
+}
+
+type CryptoAsset {
+    id: Int
+    name: String
+    symbol: String
+    rank: Int
+    quote: QuoteDetails
+}
+
+type QuoteDetails {
+  price: String
+  volume24Hours: String
+  percentChange1h: String
+  percentChange24h: String
+  percentChange7d: String
+  marketCap: String
+  lastUpdated: String
+}
